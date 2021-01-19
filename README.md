@@ -8,13 +8,14 @@ We are provided with ```Centimeter.java``` and 2 passing tests in ```CentimeterT
 - equalTo hamcrest matcher uses equals method to compare objects, ```assertThat(hundredCentimeter, is(equalTo(oneMeter)))``` would be treated as ```hundredCentimeter.equals(oneMeter)```
 - So, updated Centimeter.equals(), if the object is an instance of Meter, check the converted magnitudes.
 - **Problems**
-  - equals() should work reflexive, symmetric and transitive. ```assertThat(oneMeter, is(equalTo(hundredCentimeter)))``` will fail.
-  - Meter.java doesn't have any Test class.
+  - ```assertThat(oneMeter, is(equalTo(hundredCentimeter)))``` will fail
+  - equals() should work reflexive, symmetric and transitive
+  - Meter.java doesn't have any Test class
   
 **Solution2**
- - modified equals() in Meter.java and now equals is reflexive, symmetric and transitive.
- - Created Kilometer.java and tested on it.
- - **Problems**
+- modified equals() in Meter.java and now equals is reflexive, symmetric and transitive.
+- Created Kilometer.java and tested on it.
+- **Problems**
   - equals logic shows dupliction of code
   - should use Fewest elements
   - Now, try to use only one class
