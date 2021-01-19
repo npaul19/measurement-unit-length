@@ -1,4 +1,4 @@
-package com.tw.pathashala;
+package com.tw.firstsolution;
 
 import org.junit.jupiter.api.Test;
 
