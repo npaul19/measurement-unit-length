@@ -19,6 +19,7 @@ We are provided with ```Centimeter.java``` and 2 passing tests in ```CentimeterT
   - equals logic shows dupliction of code
   - should use Fewest elements
   - Now, try to use only one class
+  - Still Meter and Kilometer don't have any Test class
 
 **Solution3**
 - Length - factory methods - String unit, mag, factor
