@@ -22,4 +22,13 @@ class CentimeterTest {
 
         assertThat(oneCentimeter, is(not(equalTo(twoCentimeter))));
     }
+
+    @Test
+    void should_equate_100_cm_to_1_m() {
+        Centimeter hundredCentimeter = new Centimeter(100);
+        Meter oneMeter = new Meter(1);
+
+        assertThat(hundredCentimeter, is(equalTo(oneMeter)));
+    }
+
 }
